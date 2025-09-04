@@ -20,9 +20,11 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import coil.compose.AsyncImage
+import com.maciejweglarz.rickandmortyapp.R
 import com.maciejweglarz.rickandmortyapp.core.composables.LoadingProgressBar
 import com.maciejweglarz.rickandmortyapp.core.utils.ViewState
 
@@ -81,33 +83,33 @@ fun CharacterDetails(
                                     )
                                     Text(
                                         modifier = Modifier.padding(top = 16.dp),
-                                        text = "Imie postaci: $name"
+                                        text = stringResource(R.string.character_details_name_label, name)
                                     )
                                     SpacerSmall()
                                     Text(
-                                        text = "Status: $status"
+                                        text = stringResource(R.string.character_details_status_label, status)
                                     )
                                     if (type.isNotEmpty()) {
                                         SpacerSmall()
                                         Text(
-                                            text = "Gatunek: $type"
+                                            text = stringResource(R.string.character_details_species_label, type)
                                         )
                                     }
                                     SpacerSmall()
                                     Text(
-                                        text = "Płeć: $sex"
+                                        text = stringResource(R.string.character_details_sex_label, sex)
                                     )
                                     SpacerSmall()
                                     Text(
-                                        text = "Pierwotne pochodzenie: $origin"
+                                        text = stringResource(R.string.character_details_origin_label, origin)
                                     )
                                     SpacerSmall()
                                     Text(
-                                        text = "Postać utworzona: $created"
+                                        text = stringResource(R.string.character_details_created_label, created)
                                     )
                                     SpacerSmall()
                                     Text(
-                                        text = "Liczba odcinków: ${numberOfEpisodes.size}"
+                                        text = stringResource(R.string.character_details_episodes_label, numberOfEpisodes.size)
                                     )
                                 }
                             }

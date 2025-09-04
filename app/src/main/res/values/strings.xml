@@ -2,4 +2,14 @@
     <string name="app_name">RickAndMortyApp</string>
 
     <string name="loading_error_message">Ups, coś poszło nie tak.</string>"
+
+    <string name="character_details_image_description">%1$s image</string>
+    <string name="character_details_name_label">Imię postaci: %1$s</string>
+    <string name="character_details_status_label">Status: %1$s</string>
+    <string name="character_details_species_label">Gatunek: %1$s</string>
+    <string name="character_details_sex_label">Płeć: %1$s</string>
+    <string name="character_details_origin_label">Pierwotne pochodzenie: %1$s</string>
+    <string name="character_details_created_label">Postać utworzona: %1$s</string>
+    <string name="character_details_episodes_label">Liczba odcinków: %1$d</string>
+
 </resources>

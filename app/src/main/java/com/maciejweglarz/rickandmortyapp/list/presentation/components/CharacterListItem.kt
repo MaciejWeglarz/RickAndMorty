@@ -13,9 +13,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
+import com.maciejweglarz.rickandmortyapp.R
 import com.maciejweglarz.rickandmortyapp.details.presentation.SpacerSmall
 
 @Composable
@@ -51,7 +53,7 @@ fun CharacterListItem(
             )
             Spacer(modifier = Modifier.padding(4.dp))
             Text(
-                text = "Number of episodes: $episodes"
+                text = stringResource(R.string.character_details_episodes_label, episodes)
             )
 
         }

@@ -55,7 +55,6 @@ fun CharactersListScreen(
     }
 }
 
-
 //@Preview
 //@Composable
 //fun CharactersListScreenPreview() {
