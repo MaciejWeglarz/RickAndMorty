@@ -22,6 +22,8 @@ appcompat = "1.7.0"
 material = "1.12.0"
 uiTooling = "1.7.2"
 retrofit = "2.11.0"
+roomKtx = "2.7.2"
+coil = "2.5.0"
 
 
 [libraries]
@@ -52,6 +54,8 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 retrofit2-converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "converterMoshi" }
 retrofit2-retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtx" }
+coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 
 
 [plugins]

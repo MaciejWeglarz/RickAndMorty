@@ -1,4 +1,4 @@
-package com.maciejweglarz.rickandmortyapp.core
+package com.maciejweglarz.rickandmortyapp
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

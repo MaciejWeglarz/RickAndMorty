@@ -51,6 +51,7 @@ dependencies {
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.material3)
+    implementation("androidx.compose.ui:ui-text-google-fonts:1.7.2")
 
     //Compose
     implementation(platform(libs.androidx.compose.bom))
@@ -62,9 +63,19 @@ dependencies {
     implementation(libs.retrofit2.retrofit)
     implementation(libs.retrofit2.converter.moshi)
     implementation(libs.logging.interceptor)
+    implementation(libs.arrow.core)
+    implementation(libs.arrow.core.retrofit)
+
+    //Moshi
+    implementation("com.squareup.moshi:moshi-kotlin:1.14.0")
+    kapt("com.squareup.moshi:moshi-kotlin-codegen:1.15.1")
+
+    //Coil
+    implementation(libs.coil)
 
     //Hilt
     implementation(libs.hilt.android)
+    implementation(libs.androidx.room.ktx)
     kapt(libs.hilt.compiler)
     implementation(libs.androidx.hilt.navigation.compose)
 
@@ -77,6 +88,7 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
 }
 
 // Allow references to generated code
